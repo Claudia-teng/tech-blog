@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+backend:
+  label: Backend
+  permalink: /backend
+  description: Backend
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+frontend:
+  label: Frontend
+  permalink: /frontend
+  description: Frontend
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+dsa:
+  label: Data Structure and Algorithm
+  permalink: /data-structure-and-algorithm
+  description: Data Structure and Algorithm
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+devops:
+  label: DevOps
+  permalink: /devops
+  description: DevOps
