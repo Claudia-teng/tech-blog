@@ -96,7 +96,7 @@ const config: Config = {
     metadata: [
       {
         property: "og:image",
-        content: "https://claudia-teng.com/img/main.png",
+        content: "https://www.claudia-teng.com/img/main.png",
       },
     ],
     navbar: {

@@ -5,6 +5,9 @@ authors: [claudia]
 tags: [dsa]
 ---
 
+此篇為 [Udemy - Master the Coding Interview: Data Structures + Algorithms](https://udemy.com/course/master-the-coding-interview-data-structures-algorithms/?srsltid=AfmBOooCR7IyhxoDQK1cx6-Q*sh7WOI7Q3Z1LnW005R5rxfs5cmnDXo*)
+課程筆記。
+
 首篇 Data Structure 想要介紹的是 Array，在 JavaScript 當中，因為已經有內建的 Array 資料結構，因此平常已經習慣`let array = [];`這種寫法。
 
 不過 JavaScript 的 Array 其實也是從 Object 衍生而來，如果今天在 console 輸入`typof []`，你會得到`'object'`的答案，原因是在 JavaScript 中，Array 算是特別的 Object。
@@ -40,13 +43,13 @@ get(index) {
 }
 ```
 
-Big O: O(1)
+**Big O: O(1)**
 
 Array 因為有 index，因此搜尋速度很快。
 
 ### Push
 
-Array.push()是在 array 的最後面加一個值，並回傳整個 array，實作如下：
+push 是在 array 的最後面加一個值，並回傳整個 array，實作如下：
 
 ```jsx
 push(item) {
@@ -56,13 +59,13 @@ push(item) {
 }
 ```
 
-Big O: O(1)
+**Big O: O(1)**
 
 通常為 O(1)，只需在最後加上值，不用改變整個結構。但 Array 在 RAM 儲存值的方式為連續的，若 Array 末端沒有空間放最後一個值，則須將整個 Array 搬移到 RAM 其他處，此時 Big O: O(n)。
 
 ### Pop
 
-Array.pop()是移除 array 最後一個值，並回傳被移除的值，實作如下：
+pop 是移除 array 最後一個值，並回傳被移除的值，實作如下：
 
 ```jsx
 pop() {
@@ -75,7 +78,7 @@ pop() {
 
 這裡使用到的是 Object 的刪除方式`delete Object[key]`。
 
-Big O: O(1)
+**Big O: O(1)**
 
 只需移除最後一個值，不用改變其他結構。
 
@@ -141,7 +144,7 @@ shiftItems(index) {
 
 ```
 
-Big O: O(n)
+**Big O: O(n)**
 
 index 之後的結構都會改變，又因 Big O 考慮的是最差情況，若 index = 0，整個 Array 結構都須改變，因此為 O(n)。
 
@@ -166,22 +169,18 @@ myArray.shiftItems(0);
 
 ### Pros & Cons
 
-1. Pros
+- Pros
 
-   Good at having sorted data (ordered)
+1.  Good at having sorted data (ordered)
+2.  Fast lookup
+3.  Fast push/pop
 
-   Fast lookup
+- Cons
 
-   Fast push/pop
+1.  Slow Search (find value) O(n)
+2.  Slow inserts O(n)
+3.  Slow deletes O(n)
 
-   Ordered
+### Reference
 
-2. Cons
-
-   Slow Search (find value) O(n)
-
-   Slow inserts O(n)
-
-   Slow deletes O(n)
-
-https://www.google.com/maps
+[Udemy - Master the Coding Interview: Data Structures + Algorithms](https://udemy.com/course/master-the-coding-interview-data-structures-algorithms/?srsltid=AfmBOooCR7IyhxoDQK1cx6-Q*sh7WOI7Q3Z1LnW005R5rxfs5cmnDXo*)
