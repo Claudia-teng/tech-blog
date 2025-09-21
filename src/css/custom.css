@@ -28,3 +28,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom CSS */
+
+code {
+  margin: 0 0.4rem;
+}
+
+/* Hide author social media links with CSS module hash */
+[class*="authorSocials"] {
+  display: none;
+}

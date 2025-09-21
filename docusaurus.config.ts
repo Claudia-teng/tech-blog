@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Claudia Teng",
   tagline: "Full-Stack Engineer",
-  favicon: "img/favicon.ico",
+  favicon: "img/cloud.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -40,13 +40,9 @@ const config: Config = {
     [
       "classic",
       {
-        docs: {
-          sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/claudia/tech-blog/tree/main/",
-        },
+        docs: false,
         blog: {
+          routeBasePath: "/",
           showReadingTime: true,
           blogSidebarTitle: "All posts",
           blogSidebarCount: "ALL",
@@ -54,9 +50,6 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/claudia/tech-blog/tree/main/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -76,17 +69,21 @@ const config: Config = {
       title: "Claudia Teng",
       logo: {
         alt: "Claudia Teng",
-        src: "img/logo.svg",
+        src: "img/cloud.png",
       },
       items: [
-        { to: "/blog", label: "Blog", position: "left" },
-        { to: "/blog/tags", label: "Categories", position: "left" },
+        { to: "/tags", label: "Tags", position: "left" },
+        {
+          to: "https://www.linkedin.com/in/claudia-teng/",
+          label: "Contact Me",
+          position: "right",
+        },
       ],
     },
     footer: {
       style: "dark",
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} Claudia Teng. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Claudia Teng. Built with Docusaurus.<br/>Cloudy icons created by Hilmy Abiyyu A. - Flaticon</a>`,
     },
     prism: {
       theme: prismThemes.github,

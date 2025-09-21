@@ -13,6 +13,8 @@ Array 資料結構其實也能透過 JavaScript 自己實作，以下將會示�
 
 接下來就一起來實作吧！
 
+<!-- truncate -->
+
 ### Array
 
 首先建立一個`Class`叫做 MyArray，並在`constructor`內預設兩個值：length, data，作為空陣列。
@@ -181,3 +183,5 @@ myArray.shiftItems(0);
    Slow inserts O(n)
 
    Slow deletes O(n)
+
+https://www.google.com/maps
